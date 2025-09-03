@@ -1,0 +1,164 @@
+body {
+      font-family: 'Lato', sans-serif;
+      background-color: #f8f8f8;
+      color: #6d6d6d;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    a {
+      color: #b9975b;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #a3854f;
+    }
+  
+
+    .main-content-area {
+        padding-right: 30px;
+    }
+    
+    .sidebar {
+        padding-left: 30px;
+    }
+
+    /* Card style for main content */
+    .content-box {
+      background: #ffffff;
+      border: none;
+      padding: 40px;
+      margin-bottom: 30px;
+    }
+
+    .post-title {
+      font-family: 'Lato', sans-serif;
+      font-size: 44px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      color: #3a3a3a;
+      line-height: 1.2;
+    }
+
+    .meta {
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      color: #b9975b;
+      margin-bottom: 28px;
+    }
+
+    .meta a {
+        color: inherit;
+    }
+
+    /* Nav links between posts */
+    .nav-links {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+      font-size: 14px;
+      padding: 0 5px; 
+    }
+
+    /* Comment Section Title */
+    .comment-reply-title {
+        font-family: 'Lato', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        color: #3a3a3a;
+        margin-bottom: 10px;
+    }
+    
+    .logged-in-text {
+        font-size: 15px;
+    }
+
+    /* Sidebar widgets */
+    .widget {
+      margin-bottom: 45px;
+    }
+    .widget-title {
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: 400;
+      color: #3a3a3a;
+    }
+    
+    .widget-title.lowercase {
+        text-transform: lowercase;
+    }
+
+    .widget ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    .widget ul li {
+      margin-bottom: 12px;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    
+    .widget p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    
+    /* Search box with icon */
+    .search-box {
+      position: relative;
+    }
+    .search-box input.search-field {
+      border-radius: 0;
+      font-size: 14px;
+      padding: 8px 15px;
+      border: 1px solid #e0e0e0;
+      height: 46px;
+      box-shadow: none;
+    }
+    .search-box input.search-field:focus {
+      border-color: #b9975b;
+    }
+    .search-box button.search-submit {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 46px;
+      width: 46px;
+      border: none;
+      background: transparent;
+      color: #777;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    /* === NEW MEDIA QUERY FOR MOBILE RESPONSIVENESS ADDED HERE === */
+    @media (max-width: 991.98px) {
+      .container {
+        /* Adds space on the left and right of the screen */
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .main-content-area, .sidebar {
+        /* Removes horizontal padding that was for the desktop gutter */
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .sidebar {
+        /* Adds space between main content and sidebar when stacked */
+        margin-top: 40px;
+      }
+      .content-box {
+        /* Reduces padding inside the white boxes on mobile */
+        padding: 25px;
+      }
+      .post-title {
+        /* Adjusts title size for mobile */
+        font-size: 32px;
+      }
+      .comment-reply-title {
+         /* Adjusts subtitle size for mobile */
+        font-size: 24px;
+      }
+    }
